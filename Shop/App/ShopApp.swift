@@ -7,8 +7,26 @@
 
 import SwiftUI
 
+class AppDelegate: NSObject, UIApplicationDelegate {
+    
+    let testRequest = TestApiRequests()
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        testRequest.testAuth()
+        testRequest.testLogout()
+        testRequest.testRegistration()
+        testRequest.testDataChange()
+        
+        return true
+    }
+    
+}
+
 @main
 struct ShopApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
