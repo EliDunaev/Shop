@@ -321,8 +321,8 @@
 		9928645D27962C9400FBB3B3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				992864472795F21000FBB3B3 /* User.swift */,
 				992864452795F1FD00FBB3B3 /* LoginResult.swift */,
+				992864472795F21000FBB3B3 /* User.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";

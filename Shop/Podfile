@@ -8,6 +8,7 @@ target 'Shop' do
   # Pods for Shop
   pod 'Alamofire'
 
+
   target 'ShopTests' do
     inherit! :search_paths
     # Pods for testing

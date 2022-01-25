@@ -9,5 +9,5 @@ import Foundation
 
 struct RegistrationResult: Codable {
     let result: Int
-    let userMessage: String
+    let message: String
 }
