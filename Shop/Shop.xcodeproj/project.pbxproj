@@ -22,7 +22,6 @@
 		992864412795EECF00FBB3B3 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992864402795EECF00FBB3B3 /* AbstractRequestFactory.swift */; };
 		992864432795EEF100FBB3B3 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992864422795EEF100FBB3B3 /* RequestRouter.swift */; };
 		992864462795F1FD00FBB3B3 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992864452795F1FD00FBB3B3 /* LoginResult.swift */; };
-		992864482795F21000FBB3B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992864472795F21000FBB3B3 /* User.swift */; };
 		9928644B2795F26400FBB3B3 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9928644A2795F26400FBB3B3 /* AuthRequestFactory.swift */; };
 		9928644D2795F28400FBB3B3 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9928644C2795F28400FBB3B3 /* Auth.swift */; };
 		9928644F2795F36900FBB3B3 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9928644E2795F36900FBB3B3 /* RequestFactory.swift */; };
@@ -36,6 +35,15 @@
 		992864662796313600FBB3B3 /* ChangeInfoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992864652796313600FBB3B3 /* ChangeInfoResult.swift */; };
 		992864692796316600FBB3B3 /* ChangeInfoRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992864682796316600FBB3B3 /* ChangeInfoRequestFactory.swift */; };
 		9928646B279631A600FBB3B3 /* ChangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9928646A279631A600FBB3B3 /* ChangeInfo.swift */; };
+		993C212B27A0737D00F8D396 /* GetCatalogResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C212A27A0737D00F8D396 /* GetCatalogResult.swift */; };
+		993C212E27A0761A00F8D396 /* GetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C212D27A0761A00F8D396 /* GetCatalog.swift */; };
+		993C213027A0764F00F8D396 /* GetCatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C212F27A0764F00F8D396 /* GetCatalogRequestFactory.swift */; };
+		993C213327A07C6800F8D396 /* AddReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C213227A07C6800F8D396 /* AddReviewResult.swift */; };
+		993C213527A07C7300F8D396 /* DeleteReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C213427A07C7300F8D396 /* DeleteReviewResult.swift */; };
+		993C213827A07D0C00F8D396 /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C213727A07D0C00F8D396 /* AddReview.swift */; };
+		993C213A27A07D1E00F8D396 /* AddReviewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C213927A07D1E00F8D396 /* AddReviewFactory.swift */; };
+		993C213C27A07F3400F8D396 /* DeleteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C213B27A07F3400F8D396 /* DeleteReview.swift */; };
+		993C213E27A07F7400F8D396 /* DeleteReviewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C213D27A07F7400F8D396 /* DeleteReviewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +86,6 @@
 		992864402795EECF00FBB3B3 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
 		992864422795EEF100FBB3B3 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		992864452795F1FD00FBB3B3 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
-		992864472795F21000FBB3B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9928644A2795F26400FBB3B3 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		9928644C2795F28400FBB3B3 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		9928644E2795F36900FBB3B3 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
@@ -92,6 +99,15 @@
 		992864652796313600FBB3B3 /* ChangeInfoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeInfoResult.swift; sourceTree = "<group>"; };
 		992864682796316600FBB3B3 /* ChangeInfoRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeInfoRequestFactory.swift; sourceTree = "<group>"; };
 		9928646A279631A600FBB3B3 /* ChangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeInfo.swift; sourceTree = "<group>"; };
+		993C212A27A0737D00F8D396 /* GetCatalogResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogResult.swift; sourceTree = "<group>"; };
+		993C212D27A0761A00F8D396 /* GetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalog.swift; sourceTree = "<group>"; };
+		993C212F27A0764F00F8D396 /* GetCatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogRequestFactory.swift; sourceTree = "<group>"; };
+		993C213227A07C6800F8D396 /* AddReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewResult.swift; sourceTree = "<group>"; };
+		993C213427A07C7300F8D396 /* DeleteReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteReviewResult.swift; sourceTree = "<group>"; };
+		993C213727A07D0C00F8D396 /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
+		993C213927A07D1E00F8D396 /* AddReviewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewFactory.swift; sourceTree = "<group>"; };
+		993C213B27A07F3400F8D396 /* DeleteReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteReview.swift; sourceTree = "<group>"; };
+		993C213D27A07F7400F8D396 /* DeleteReviewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteReviewFactory.swift; sourceTree = "<group>"; };
 		BD3D6E6B16518F3A77D23A39 /* Pods-Shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop.debug.xcconfig"; path = "Target Support Files/Pods-Shop/Pods-Shop.debug.xcconfig"; sourceTree = "<group>"; };
 		D621A12D9D59F898C5C4DBCD /* Pods-Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop.release.xcconfig"; path = "Target Support Files/Pods-Shop/Pods-Shop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +198,8 @@
 		99014EFC27844AF600246CE4 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				993C213127A07C3600F8D396 /* Reviews */,
+				993C212927A0736900F8D396 /* Catalog */,
 				992864642796311A00FBB3B3 /* ChangeInfo */,
 				9928645F27962CA600FBB3B3 /* Registration */,
 				9928645E27962C9F00FBB3B3 /* Logout */,
@@ -283,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				9928644E2795F36900FBB3B3 /* RequestFactory.swift */,
+				993C213627A07CE000F8D396 /* Reviews */,
+				993C212C27A075FF00F8D396 /* GetCatalog */,
 				992864672796315400FBB3B3 /* ChangeInfo */,
 				9928645A27962C0B00FBB3B3 /* Registration */,
 				99286453279600FF00FBB3B3 /* Logout */,
@@ -322,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				992864452795F1FD00FBB3B3 /* LoginResult.swift */,
-				992864472795F21000FBB3B3 /* User.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -358,6 +377,43 @@
 				9928646A279631A600FBB3B3 /* ChangeInfo.swift */,
 			);
 			path = ChangeInfo;
+			sourceTree = "<group>";
+		};
+		993C212927A0736900F8D396 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				993C212A27A0737D00F8D396 /* GetCatalogResult.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		993C212C27A075FF00F8D396 /* GetCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				993C212F27A0764F00F8D396 /* GetCatalogRequestFactory.swift */,
+				993C212D27A0761A00F8D396 /* GetCatalog.swift */,
+			);
+			path = GetCatalog;
+			sourceTree = "<group>";
+		};
+		993C213127A07C3600F8D396 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				993C213227A07C6800F8D396 /* AddReviewResult.swift */,
+				993C213427A07C7300F8D396 /* DeleteReviewResult.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		993C213627A07CE000F8D396 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				993C213927A07D1E00F8D396 /* AddReviewFactory.swift */,
+				993C213727A07D0C00F8D396 /* AddReview.swift */,
+				993C213D27A07F7400F8D396 /* DeleteReviewFactory.swift */,
+				993C213B27A07F3400F8D396 /* DeleteReview.swift */,
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,24 +655,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				99286459279614E000FBB3B3 /* TestApiRequests.swift in Sources */,
+				993C213A27A07D1E00F8D396 /* AddReviewFactory.swift in Sources */,
+				993C213E27A07F7400F8D396 /* DeleteReviewFactory.swift in Sources */,
 				992864692796316600FBB3B3 /* ChangeInfoRequestFactory.swift in Sources */,
 				9928644F2795F36900FBB3B3 /* RequestFactory.swift in Sources */,
 				9928646B279631A600FBB3B3 /* ChangeInfo.swift in Sources */,
 				992864412795EECF00FBB3B3 /* AbstractRequestFactory.swift in Sources */,
+				993C213327A07C6800F8D396 /* AddReviewResult.swift in Sources */,
 				992864462795F1FD00FBB3B3 /* LoginResult.swift in Sources */,
+				993C212E27A0761A00F8D396 /* GetCatalog.swift in Sources */,
 				9928646327962DF200FBB3B3 /* Registration.swift in Sources */,
 				9922A0D8278445BE007704A9 /* ShopApp.swift in Sources */,
+				993C213027A0764F00F8D396 /* GetCatalogRequestFactory.swift in Sources */,
 				992864432795EEF100FBB3B3 /* RequestRouter.swift in Sources */,
 				9928646127962CD500FBB3B3 /* RegistrationResult.swift in Sources */,
-				992864482795F21000FBB3B3 /* User.swift in Sources */,
+				993C213827A07D0C00F8D396 /* AddReview.swift in Sources */,
+				993C212B27A0737D00F8D396 /* GetCatalogResult.swift in Sources */,
 				992864512796009B00FBB3B3 /* LogoutResult.swift in Sources */,
 				9928644D2795F28400FBB3B3 /* Auth.swift in Sources */,
 				9928644B2795F26400FBB3B3 /* AuthRequestFactory.swift in Sources */,
 				992864552796012400FBB3B3 /* LogoutRequestFactory.swift in Sources */,
 				9928643D2795ED7600FBB3B3 /* ErrorParser.swift in Sources */,
 				9928643F2795EDC000FBB3B3 /* DataRequest.swift in Sources */,
+				993C213C27A07F3400F8D396 /* DeleteReview.swift in Sources */,
 				9928643B2795ED5A00FBB3B3 /* AbstractErrorParser.swift in Sources */,
 				9928645C27962C2A00FBB3B3 /* RegistrationRequestFactory.swift in Sources */,
+				993C213527A07C7300F8D396 /* DeleteReviewResult.swift in Sources */,
 				99286457279602B600FBB3B3 /* Logout.swift in Sources */,
 				992864662796313600FBB3B3 /* ChangeInfoResult.swift in Sources */,
 			);

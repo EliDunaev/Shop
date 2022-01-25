@@ -1,14 +1,14 @@
 //
-//  Auth.swift
+//  DeleteReview.swift
 //  Shop
 //
-//  Created by Илья Дунаев on 17.01.2022.
+//  Created by Илья Дунаев on 25.01.2022.
 //
 
 import Foundation
 import Alamofire
 
-class Auth: AbstractRequestFactory {
+class DeleteReview: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
@@ -24,25 +24,23 @@ class Auth: AbstractRequestFactory {
     }
 }
 
-extension Auth: AuthRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
+extension DeleteReview: DeleteReviewFactory {
+    func deteteReview(commentId: Int, completionHandler: @escaping (AFDataResponse<DeleteReviewResult>) -> Void) {
+        let requestModel = DeleteReview(baseUrl: baseUrl, commentId: commentId)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension Auth {
-    struct Login: RequestRouter {
+extension DeleteReview {
+    struct DeleteReview: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .post
-        let path: String = "login"
-        
-        let login: String
-        let password: String
+        let path: String = "deleteReview"
+    
+        let commentId: Int
         var parameters: Parameters? {
             return [
-                "username": login,
-                "password": password
+                "commentId": commentId,
             ]
         }
     }

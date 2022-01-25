@@ -1,14 +1,14 @@
 //
-//  Auth.swift
+//  GetCatalog.swift
 //  Shop
 //
-//  Created by Илья Дунаев on 17.01.2022.
+//  Created by Илья Дунаев on 25.01.2022.
 //
 
 import Foundation
 import Alamofire
 
-class Auth: AbstractRequestFactory {
+class GetCatalog: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
@@ -24,25 +24,25 @@ class Auth: AbstractRequestFactory {
     }
 }
 
-extension Auth: AuthRequestFactory {
-    func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void) {
-        let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
+extension GetCatalog: GetCatalogRequestFactory {
+    func get(pageNumber: Int, categoryId: Int, completionHandler: @escaping (AFDataResponse<GetCatalogResult>) -> Void) {
+        let requestModel = getCatalog(baseUrl: baseUrl, pageNumber: pageNumber, categoryId: categoryId)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
 }
 
-extension Auth {
-    struct Login: RequestRouter {
+extension GetCatalog {
+    struct getCatalog: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .post
-        let path: String = "login"
-        
-        let login: String
-        let password: String
+        let path: String = "getCatalog"
+    
+        let pageNumber: Int
+        let categoryId: Int
         var parameters: Parameters? {
             return [
-                "username": login,
-                "password": password
+                "idCategory": categoryId,
+                "pageNumber": pageNumber
             ]
         }
     }

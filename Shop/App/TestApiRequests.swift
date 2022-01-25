@@ -59,4 +59,40 @@ struct TestApiRequests {
         }
     }
     
+    func getCatalogData() {
+        let get = requestFactory.makeGetCatalogData()
+        get.get(pageNumber: 1, categoryId: 1) { response in
+            switch response.result {
+            case .success(let changeData):
+                print(changeData)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func addReview() {
+        let add = requestFactory.makeAddReview()
+        add.addReview(userId: 1, text: "Blah-blah") { response in
+            switch response.result {
+            case .success(let changeData):
+                print(changeData)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func deteteReview() {
+        let delete = requestFactory.makeDeleteReview()
+        delete.deteteReview(commentId: 1) { response in
+            switch response.result {
+            case .success(let changeData):
+                print(changeData)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
 }

@@ -17,6 +17,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         testRequest.testLogout()
         testRequest.testRegistration()
         testRequest.testDataChange()
+        testRequest.getCatalogData()
+        testRequest.addReview()
+        testRequest.deteteReview()
         
         return true
     }
